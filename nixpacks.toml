@@ -1,0 +1,11 @@
+[providers]
+providers = ['node']
+
+[phases.setup]
+nixPkgs = ['nodejs', 'npm']
+
+[phases.install]
+cmds = ['npm install']
+
+[start]
+cmd = 'npx serve -s .'
